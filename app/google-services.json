@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "469556594001",
+    "firebase_url": "https://fiebaseads.firebaseio.com",
+    "project_id": "fiebaseads",
+    "storage_bucket": "fiebaseads.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:469556594001:android:2b06240da0061e3f12bf70",
+        "android_client_info": {
+          "package_name": "com.android.demopushincomingcall"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "469556594001-sid4m06nr2t9ic051u0luugavg9c942f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxureRO8lEtzQezv0xgg7zICG3HIvH9mo"
+        }
+      ]
+    }
+  ],
+  "configuration_version": "1"
+}
