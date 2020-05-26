@@ -6,6 +6,7 @@ import android.os.Build;
 import android.util.Log;
 
 import com.android.demopushincomingcall.IncomingActivity;
+import com.android.demopushincomingcall.MyApplication;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
@@ -32,7 +33,7 @@ public class FirebaseMsgService extends FirebaseMessagingService {
             // sendNotification(title, body);
         } else {
             //In background we use getData.
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q && MyApplication.Companion.isBackground() ) {
                 startForegroundService(new Intent(this, HeadsUpNotificationService.class));
             } else {
                 final Intent intent = new Intent(this, IncomingActivity.class);
