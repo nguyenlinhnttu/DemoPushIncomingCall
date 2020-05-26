@@ -1,4 +1,4 @@
-package com.android.demopushincomingcall.firebase;
+package com.android.demopushincomingcall.firebase.java;
 
 /**
  * Created by NguyenLinh on 15,May,2020

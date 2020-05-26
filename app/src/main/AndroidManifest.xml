@@ -33,7 +33,7 @@
             android:screenOrientation="portrait"
             android:showOnLockScreen="true" />
 
-        <service android:name=".firebase.FirebaseMsgService">
+        <service android:name=".firebase.kotlin.FirebaseService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
@@ -41,8 +41,8 @@
         <meta-data
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/color_orange" />
-        <service android:name=".firebase.HeadsUpNotificationService" />
-        <receiver android:name=".firebase.HeadsUpNotificationActionReceiver" />
+        <service android:name=".firebase.kotlin.HeadsUpNotificationService" />
+        <receiver android:name=".firebase.kotlin.HeadsUpNotificationActionReceiver" />
     </application>
 
 </manifest>

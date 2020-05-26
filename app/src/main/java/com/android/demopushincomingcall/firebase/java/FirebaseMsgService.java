@@ -1,4 +1,4 @@
-package com.android.demopushincomingcall.firebase;
+package com.android.demopushincomingcall.firebase.java;
 
 
 import android.content.Intent;

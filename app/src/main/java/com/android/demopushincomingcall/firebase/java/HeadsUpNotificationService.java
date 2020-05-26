@@ -1,4 +1,4 @@
-package com.android.demopushincomingcall.firebase;
+package com.android.demopushincomingcall.firebase.java;
 
 /**
  * Created by NguyenLinh on 14,May,2020
@@ -90,7 +90,7 @@ public class HeadsUpNotificationService extends Service {
                 incomingCallNotification = notificationBuilder.build();
             }
             PowerManager pm = (PowerManager) getApplicationContext().getSystemService(Context.POWER_SERVICE);
-            boolean isScreenOn = Build.VERSION.SDK_INT >= 20 ? pm.isInteractive() : pm.isScreenOn();
+            boolean isScreenOn = pm.isInteractive();
             Log.e("screen on.......", "" + isScreenOn);
             if (!isScreenOn) {
                 PowerManager.WakeLock wl = pm.newWakeLock(PowerManager.FULL_WAKE_LOCK | PowerManager.ACQUIRE_CAUSES_WAKEUP | PowerManager.ON_AFTER_RELEASE, "MyLock");
